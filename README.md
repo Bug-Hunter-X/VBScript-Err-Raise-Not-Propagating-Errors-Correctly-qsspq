@@ -1,0 +1,1 @@
+This example demonstrates a subtle error in VBScript's error handling.  The `MyFunction` uses `Err.Raise` to signal an error if a parameter is empty.  However, if the calling function doesn't explicitly handle the error using `On Error Resume Next` or `On Error GoTo`, the error might be silently swallowed.  The solution shows how to properly handle and propagate errors.
